@@ -1,0 +1,204 @@
+/* section.account-info {
+    background-image: linear-gradient(to right, #0a3240 0%, #39425a 51%, #15303a 100%);
+    border-top: 1px solid #32465A;
+    border-bottom: 1px solid #32465A;
+    background-color: #34495e;
+} */
+
+.account_info_container {
+    margin: 2rem 0;
+}
+
+.account_info_container .info_customer {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(51 51 51 / 20%);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.account_info_container .info_customer .avatar {
+    position: relative;
+    padding: 1rem;
+}
+
+.account_info_container .info_customer .avatar img {
+    width: 75px;
+    height: 75px;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgb(51 51 51 / 20%);
+    display: block;
+    object-fit: cover;
+}
+
+.account_info_container .info_customer .avatar .setting {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.7rem 0.7rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray);
+    box-shadow: 0 3px 10px rgb(51 51 51 / 20%);
+    color: var(--white);
+}
+
+.account_info_container .info_customer .avatar .setting:hover {
+    background-color: #333333;
+    color: var(--main-color-light);
+}
+
+.account_info_container .info_customer .info {
+    padding: 0 1rem;
+}
+
+.account_info_container .info_customer .info h5 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #333333;
+    font-size: 1.7rem;
+    line-height: 2;
+}
+
+.account_info_container .info_customer .info p {
+    font-style: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--blue);
+}
+
+.account_info_container .info_customer .nav_bar {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 1rem;
+}
+
+.account_info_container .info_customer .nav_bar ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    border-radius: 0.5rem;
+    padding: 1.4rem 0;
+}
+
+.account_info_container .info_customer .nav_bar ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+
+.account_info_container .info_customer .nav_bar ul li {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: start;
+}
+
+.account_info_container .info_customer .nav_bar ul li a {
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    transition: none;
+    border-radius: 0.5rem;
+    z-index: 100;
+}
+
+.account_info_container .info_customer .nav_bar ul li a.active,
+.account_info_container .info_customer .nav_bar ul li a:hover {
+    color: var(--main-color-light);
+    background-color: #333333;
+}
+
+.account_info_container .content_page {
+    width: 100%;
+    min-height: 400px;
+    padding: 2rem;
+    margin: 2rem 0 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 10px rgb(51 51 51 / 20%);
+    overflow-x: auto;
+}
+
+
+/* --------------------------------- */
+
+.account_info_container .content_page table.greenTable {
+    font-family: Georgia, serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.account_info_container .content_page table.greenTable tr {
+    border-bottom: 0.1rem solid var(--light-color);
+}
+
+.account_info_container .content_page table.greenTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+.account_info_container .content_page table.greenTable td {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+}
+
+.account_info_container .content_page table.greenTable th:last-child,
+.account_info_container .content_page table.greenTable td:last-child {
+    text-align: right;
+}
+
+.account_info_container .content_page table.greenTable tbody tr:hover {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    transition: none;
+}
+
+.account_info_container .content_page table.greenTable thead th {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.account_info_container .content_page table.greenTable thead th:first-child {
+    border-left: none;
+}
+
+span.star i {
+    color: var(--yellow);
+    font-size: 1.3rem;
+}
+
+.flex_R {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+a.edit-review {
+    font-size: 1.3rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    color: var(--main-color);
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+a.delete-review {
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    color: var(--red);
+    border: 0.1rem solid var(--red);
+    border-radius: 0.5rem;
+    display: inline-block;
+}

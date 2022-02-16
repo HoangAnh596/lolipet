@@ -1,0 +1,117 @@
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+    gap: 3rem;
+    /* padding: 0 4rem; */
+}
+
+.blog-container .blog-item {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.blog-container .blog-item:hover {
+    box-shadow: 0 3px 10px rgb(51 51 51 / 20%);
+}
+
+.blog-container .item-top {
+    position: relative;
+}
+
+.blog-container .item-top .link_blog {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-container .item-top .link_blog a {
+    opacity: 0;
+    text-align: center;
+    transform: scale(.5) translateY(10%);
+}
+
+.blog-container .blog-item .item-top:hover>.link_blog a {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.blog-container .item-top .thumbnail {
+    height: 368px;
+    width: auto;
+}
+
+.blog-container .item-top .thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* .blog-container .item-bottom {
+    text-align: center;
+} */
+
+.blog-container .item-bottom .item-extra ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+}
+
+.blog-container .item-bottom .item-extra ul li {
+    padding: 0 1rem;
+}
+
+.blog-container .item-bottom .item-extra ul li.middle {
+    /* border-right: 0.1rem solid var(--main-color); */
+    border-left: 0.1rem solid var(--main-color);
+}
+
+.blog-container .item-bottom .item-extra i {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.blog-container .item-bottom .item-extra span {
+    color: var(--light-black);
+    font-size: 1.5rem;
+}
+
+.blog-container .item-bottom .item-extra span.author {
+    color: var(--text-color);
+    font-family: 'Coiny', cursive;
+    padding-left: 0.4rem;
+}
+
+.blog-container .item-bottom .item-extra span.comment {
+    color: var(--text-color);
+    font-weight: bold;
+    padding-right: 0.4rem;
+}
+
+.blog-container .item-bottom .title {
+    max-width: 100%;
+    font-family: 'Coiny', cursive;
+    color: #333333;
+    font-size: 2rem;
+    text-transform: capitalize;
+    line-height: 2;
+    padding: 1rem 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.box-calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px var(--main-color-light);
+}

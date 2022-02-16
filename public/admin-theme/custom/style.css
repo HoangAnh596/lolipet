@@ -1,0 +1,19 @@
+.add-product-preview-img {
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid #ccc;
+    margin-bottom: 7px;
+}
+
+.add-product-preview-img>img {
+    width: 100%;
+    height: auto;
+}
+
+img.img-custom-edit {
+    width: 100%;
+    height: auto;
+    border: 0.1rem solid #ced4da;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}

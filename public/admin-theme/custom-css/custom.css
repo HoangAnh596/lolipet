@@ -1,0 +1,113 @@
+.select2-selection__rendered {
+    line-height: 31px !important;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.select2-container .select2-selection--single {
+    height: 40px !important;
+}
+
+.select2-selection {
+    overflow: hidden;
+}
+
+.select2-selection__arrow {
+    height: 40px !important;
+}
+
+.btn-secondary {
+    color: #373a3c;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-secondary:hover {
+    color: #373a3c;
+    background-color: #eceeef;
+}
+
+.dt-button-collection {
+    overflow: visible !important;
+    width: 155.5px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border: 0 !important;
+}
+
+.dropdown-menu {
+    min-width: 9.7rem;
+}
+
+.dt-button-collection div.dt-button,
+div.dt-button-collection a.dt-button {
+    margin-bottom: 0 !important;
+}
+
+.dt-button {
+    background-color: #0275d8;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #2b2d2f !important;
+    text-decoration: none !important;
+    background-color: #f5f5f5 !important;
+}
+
+.dt-button-background {
+    position: inherit !important;
+}
+
+.dropdown-item {
+    border: 0 !important;
+}
+
+.dropdown-item.active,
+.dropdown-item.active:focus,
+.dropdown-item.active:hover {
+    border: 0 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    background: #0275d8 !important;
+    outline: 0 !important;
+}
+
+.select2-selection__choice__display {
+    color: #000;
+}
+
+#file-upload {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 9px 148px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.infor {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+    border: 10px;
+    border-radius: 5px;
+    height: 42px;
+    width: 75px;
+}
+
+.warpper {
+    height: 700px;
+}
+
+#emptyChart {
+    position: relative;
+    top: 35%;
+    left: 42%;
+    width: 50%;
+}
